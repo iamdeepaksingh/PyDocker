@@ -56,6 +56,12 @@ You can test the endpoints using `curl` commands as follows:
     ```sh
     curl -X GET http://localhost:5000/products
     ```
+
+- Retrieve a product by id:
+    ```sh
+    curl -X GET http://localhost:5000/product/<id>
+    ```
+
 - Create a new product:
     ```sh
     curl --header "Content-Type: application/json" --request POST --data "{\"name\": \"Product 3\"}" -v http://localhost:5000/product
